@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+.authorityhub {
+	width: 20%;
+	display: inline-block;
+}
+
+.queryresponseposition {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.top {
+	display : inline-block;
+	vertical-align: top;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="main.js"></script>
+<title>Oogle</title>
+</head>
+<body>
+	<div id="formdiv" >
+		<div id="retrievalTypeDiv" class="top">
+		<span> Retrieval Type </span><br />
+		<select id="retrievalType" name="retrievalType" >
+			<option id="tf" value="TFIDF">TFIDF</option>
+			<option id="ah" value="AuthorityHub">Authority Hub</option>
+			<option id="pr" value="PageRank">Page Rank</option>		
+		</select> <br /><br /><br /><br />
+		</div>
+		<div id="probabilityWDiv" class="top" style="display: none;">
+		<span> Probability W </span><br />
+		<input type="text" id="probabilityW" placeholder="Enter Probability W" required/>
+		</div>
+		<div id="searchArea" align="center">
+			<label style="font-size: 50px;">OOGLE</label> <br />
+			<input style="height:25px;" type="text" size="100" placeholder="Enter Query" id="query" autofocus required/> <br /><br />
+			<input type="submit" id="Search" value="Search" />
+		</div>
+	</div>
+<!--  need to check request object attribute whether null or not to display the results -->
+<div id="queryResponsePosition" class="queryresponseposition">
+	<div id="QueryResponse">
+	</div>
+	
+	<div id="authorityResults" class="authorityhub" >
+	</div>
+	
+	<div id="hubResults" class="authorityhub">
+	</div>
+</div>
+</body>
+</html>
