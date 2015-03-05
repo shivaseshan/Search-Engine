@@ -1,2 +1,9 @@
+# Eclipse
 .classpath
-.settings
+.project
+.settings/
+build/
+
+# OSX
+.DS_Store
+
